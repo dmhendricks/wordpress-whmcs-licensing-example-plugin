@@ -1,0 +1,17 @@
+{
+  "name": "licensing-addon-example",
+  "description": "An example plugin for validating license keys via the WHMCS Licensing Addon",
+  "author": "Daniel M. Hendricks",
+  "license": "GPL-2.0",
+  "scripts": {
+    "translate": "wp-pot -s 'app/**/*.php' -o ./languages/$npm_package_name.pot -p $npm_package_config_slug",
+    "zip": "zip -q -r ../$npm_package_name.zip * -x 'node_modules/*' '.git*' './src/*' './.*' './package*.*' './composer.*' './*.md' './bower.json' './gulpfile.js' "
+  },
+  "devDependencies": {
+    "wp-pot-cli": "^1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dmhendricks/wordpress-whmcs-licensing-example-plugin.git"
+  }
+}

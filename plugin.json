@@ -1,0 +1,10 @@
+{
+  "prefix": "licex",
+  "short_name": "Licensing Example",
+  "whmcs": {
+    "url": "http://www.yourdomain.com/whmcs/",
+    "product_key": "your_product_secret_key",
+    "local_key_expire_days": 15,
+    "allow_check_fail_days": 5
+  }
+}

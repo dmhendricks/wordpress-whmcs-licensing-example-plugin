@@ -1,0 +1,31 @@
+{
+  "name": "dmhendricks/wordpress-whmcs-licensing-example-plugin",
+  "type": "wordpress-plugin",
+  "description": "An example plugin for validating license keys via the WHMCS Licensing Addon",
+  "keywords": ["wordpress", "plugin", "whmcs", "licensing", "addon", "validate", "license"],
+  "homepage": "https://www.danhendricks.com",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Daniel M. Hendricks",
+      "homepage": "https://danhendricks.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/dmhendricks/wordpress-whmcs-licensing-example-plugin/issues/",
+    "source": "https://github.com/dmhendricks/wordpress-whmcs-licensing-example-plugin/"
+  },
+  "require": {
+    "php": ">=5.6",
+    "tareq1988/wordpress-settings-api-class": "dev-master",
+    "dmhendricks/wordpress-toolkit": "dev-master",
+    "composer/installers": "^1.5.0"
+  },
+  "minimum-stability": "dev",
+  "scripts": {
+      "pre-autoload-dump": [
+        "find ./vendor -name '.git*' -exec rm -rf {} +"
+      ]
+  }
+}
